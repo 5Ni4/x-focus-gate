@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>解け！</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <div class="title-row">
+        <h1>解け！</h1>
+        <label class="toggle-control">
+          <input id="enabled" class="toggle-input" type="checkbox" aria-label="チェックを有効にする" />
+          <span class="toggle" aria-hidden="true"></span>
+        </label>
+      </div>
+      <p class="intro">TLをのぞく前に1問出題。</p>
+
+      <label class="setting-row" for="intervalMinutes">
+        <span>
+          <span class="setting-title">出題の間隔</span>
+        </span>
+        <select id="intervalMinutes">
+          <option value="1">1分</option>
+          <option value="3">3分</option>
+          <option value="5">5分</option>
+          <option value="10">10分</option>
+          <option value="15">15分</option>
+        </select>
+      </label>
+
+      <button id="openX" class="primary-button" type="button">Xを開く</button>
+      <p id="status" class="status" role="status"></p>
+
+      <p class="credit">
+        この拡張機能は、とある入退社芸人
+        <a href="https://x.com/R5ni4" target="_blank" rel="noreferrer noopener">@R5ni4</a>
+        が作りました
+      </p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
